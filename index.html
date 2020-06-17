@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Custom Style -->
+     <link rel="stylesheet" href="style.css">
+     <link href="modal.css" rel="stylesheet" type="text/css" />
+    <title>Hello, world!</title>
+  </head>
+  <body>
+        <nav>
+              <img class="rotate" src="link.svg">
+                    <h1 class="nav-brand">Short | IT</h1>
+                    <button class="btn center" id="modal-btn">Add URL</button>
+              <div class="nav-link">
+              <a href="#">Home</a>
+              <a href="#">Login</a>
+              <a href="#">SignUp</a>
+              <hr id="marker">
+              </div>
+        </nav>
+        <!--
+                https://giphy.com/gifs/U4FkC2VqpeNRHjTDQ5
+                -->
+        <div id="my-modal" class="modal">
+			<div class="modal-content">
+				<div class="modal-header">
+					<span class="close">&times;</span>
+					<h2>Short It</h2>
+				</div>
+				<div class="modal-body">
+					<form>
+                            <div class="form-container">
+                                    <lable>Enter URL</lable> <br>
+                                    <input id="url" class="input-feild" placeholder="https://www.shortit.com">
+                                    <a href="#" class="btn get-url">Get</a>
+                                    <div class="alert error">Error</div>
+                                    <input id="copy-url" class="input-feild my-1" value="https://www.srt.it" readonly>
+                                    <a href="#" class="btn copy-url" onclick="copy()">copy!</a> <span class="tooltip">Copied!</span>
+                                </div>
+                        </form>
+				</div>
+				<div class="modal-footer">
+					<h3>Connect in shortest way</h3>
+				</div>
+			</div>
+		</div>
+    <!-- Custom JavaScript -->
+    <script src="modal.js"></script>
+    <script src="script.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  </body>
+</html>
